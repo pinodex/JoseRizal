@@ -9,7 +9,7 @@
     <div class="hero is-fullheight">
       <div class="hero-body">
         <div class="container">
-          <h1 class="title">Welcome to Jose Rizal!</h1>
+          <h1 class="title">Welcome to José Rizal!</h1>
         </div>
       </div>
     </div>
@@ -21,7 +21,11 @@
   import IndexHeroMain from '@/components/Index/HeroMain'
 
   export default {
-    components: { Navbar, IndexHeroMain }
+    components: { Navbar, IndexHeroMain },
+
+    created () {
+      this.$root.setPageTitle('Home')
+    }
   }
 </script>
 

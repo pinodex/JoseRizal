@@ -1,15 +1,15 @@
 <template>
   <section class="hero-body">
     <div class="background">
-      <div class="sky"></div>
+      <div class="image"></div>
 
-      <transition name="slide-up-fade">
-        <div class="grass" v-show="isWelcomeTextVisible"></div>
+      <transition name="slide-fade-slow">
+        <div class="video" v-show="isVideoBgVisible">
+          <video ref="bgVideo" autoplay loop></video>
+        </div>
       </transition>
 
-      <transition name="fade">
-        <clouds v-show="isWelcomeTextVisible"></clouds>
-      </transition>
+      <div class="overlay"></div>
     </div>
 
     <div class="container">
@@ -27,9 +27,9 @@
   .background {
     z-index: -1;
 
-    .sky {
-      background: #bdebe9;
-
+    .image,
+    .video,
+    .overlay {
       position: absolute;
       top: 0;
       left: 0;
@@ -37,24 +37,26 @@
       bottom: 0;
     }
 
-    .grass {
-      background: #adc644;
-
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0;
-
-      height: 5rem;
+    .image {
+      background: url(/static/img/hero-bg.jpg);
+      background-position: center;
+      background-size: cover;
     }
 
-    /deep/ .clouds {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
+    .video {
+      overflow: hidden;
 
-      height: 35vh;
+      video {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+
+        font-family: 'object-fit: cover;';
+      }
+    }
+
+    .overlay {
+      background: rgba(0, 50, 95, 0.5);
     }
   }
 
@@ -62,7 +64,9 @@
     .start {
       font-family: 'Open Sans';
       font-weight: 300;
-      font-size: 3rem;
+      font-size: 4rem;
+
+      color: #fff;
     }
 
     .name {
@@ -70,9 +74,11 @@
 
       font-family: 'Oswald';
       font-weight: bold;
-      font-size: 4rem;
+      font-size: 5rem;
 
       background: #fff;
+      color: #000;
+
       padding: 0 1rem;
     }
 
@@ -93,19 +99,48 @@
 </style>
 
 <script>
-  import Clouds from './Clouds'
+  import objectFitPolyfill from 'object-fit-videos'
 
   export default {
-    components: { Clouds },
-
     data () {
       return {
-        isWelcomeTextVisible: false
+        isWelcomeTextVisible: false,
+        isVideoBgVisible: false
       }
+    },
+
+    created () {
     },
 
     mounted () {
       setTimeout(() => this.isWelcomeTextVisible = true, 200)
+
+      this.loadBgVideo()
+    },
+
+    methods: {
+      loadBgVideo () {
+        let xhr = new XMLHttpRequest()
+
+        xhr.open('GET', '/static/video/hero-bg.mp4', true)
+        xhr.responseType = 'arraybuffer'
+
+        xhr.onload = e => {
+          if (e.target.status === 200) {
+            let type = 'video/mp4',
+                blob = new Blob([e.target.response], { type }),
+                url = URL.createObjectURL(blob)
+
+            this.$refs.bgVideo.setAttribute('src', url)
+
+            objectFitPolyfill()
+
+            this.isVideoBgVisible = true
+          }
+        }
+
+        xhr.send()
+      }
     }
   }
 </script>

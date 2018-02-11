@@ -1,7 +1,7 @@
 <template>
   <transition name="slide-down">
     <nav class="navbar is-fixed-top is-transparent" role="navigation" aria-label="main navigation"
-      :class="{ 'is-collapsed': isCollapsed, 'has-shadow': isCollapsed }"
+      :class="{ 'is-collapsed': isCollapsed, 'has-shadow': hasShadow }"
       v-show="isNavbarVisible">
 
       <div class="container">
@@ -22,10 +22,12 @@
           <button class="delete is-large" @click="hideMenu()"></button>
 
           <div class="navbar-start">
-            <a class="navbar-item is-active" href="/">Home</a>
-            <a class="navbar-item" href="/blog">Blog</a>
-            <a class="navbar-item" href="/photos">Photos</a>
-            <a class="navbar-item" href="/biography">Biography</a>
+            <router-link v-for="(item, i) in items" class="navbar-item"
+              :key="i"
+              :class="{ 'is-active': isItemActive(item.route) }"
+              :to="{ name: item.route }">
+              {{ item.text }}
+            </router-link>
           </div>
 
           <div class="navbar-end">
@@ -43,14 +45,32 @@
       animateIn: {
         type: Boolean,
         default: false
+      },
+
+      collapse: {
+        type: Boolean,
+        default: false
+      },
+
+      shadow: {
+        type: Boolean,
+        default: true
       }
     },
 
     data () {
       return {
-        isCollapsed: false,
+        isCollapsed: this.collapse,
         isMenuVisible: false,
-        isNavbarRevealed: false
+        isNavbarRevealed: false,
+
+        items: [
+          { text: 'Home', route: 'index' },
+          { text: 'Biography', route: 'biography' },
+          { text: 'Blog', route: 'blog' },
+          { text: 'Photos', route: 'photos' },
+          { text: 'Works', route: 'works' }
+        ]
       }
     },
 
@@ -61,6 +81,10 @@
         }
 
         return this.isNavbarRevealed
+      },
+
+      hasShadow () {
+        return this.isCollapsed && this.shadow
       }
     },
 
@@ -68,6 +92,10 @@
       setTimeout(() => this.isNavbarRevealed = true, 200)
 
       this.$root.$on('scroll', () => {
+        if (this.collapse) {
+          return
+        }
+
         if (window.scrollY > 1) {
           this.isCollapsed = true
 
@@ -85,12 +113,20 @@
 
       hideMenu () {
         this.isMenuVisible = false
+      },
+
+      isItemActive (route) {
+        return this.$route.name.indexOf(route) >= 0
       }
     }
   }
 </script>
 
 <style lang="scss" scoped>
+  .navbar {
+    z-index: 50;
+  }
+
   .navbar-burger {
     border: none;
     outline: none;
@@ -114,14 +150,14 @@
       transition: all 0.5s ease;
 
       .navbar-menu .navbar-item {
-        color: #36b0a9;
+        color: #ccc;
 
         &.is-active {
-          color: #1e625e;
+          color: #fff;
         }
 
         &:hover:not(.is-active) {
-          color: #000;
+          color: #eee;
         }
       }
 
@@ -138,12 +174,11 @@
         }
 
         .navbar-menu .navbar-item {
-          border-width: 2px;
           color: #999;
 
           &.is-active {
-            border-color: #af5726;
-            color: #222;
+            background: #bc5d29 !important;
+            color: #fff;
           }
 
           &:hover:not(.is-active) {
@@ -180,8 +215,6 @@
         font-family: 'Open Sans';
         text-transform: uppercase;
         letter-spacing: 2px;
-
-        border-bottom: 5px solid transparent;
 
         color: #999;
 
@@ -233,16 +266,5 @@
         }
       }
     }
-  }
-
-  .slide-down-enter-active,
-  .slide-down-leave-active {
-    transition: all .3s ease;
-  }
-
-  .slide-down-enter,
-  .slide-down-leave-to {
-    transform: translateY(-100px);
-    opacity: 0;
   }
 </style>
