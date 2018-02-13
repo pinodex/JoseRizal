@@ -4,7 +4,7 @@
     <sub-navbar :items="subNavItems"></sub-navbar>
 
     <transition name="fade" mode="out-in">
-      <component :is="currentPage"></component>
+      <component :is="currentPage" :class="{ page: hasPaddingTop() }"></component>
     </transition>
   </section>
 </template>
@@ -15,13 +15,17 @@
 
   const pages = {
     about: () => import('@/pages/Biography/About'),
-    family: () => import('@/pages/Biography/Family')
+    family: () => import('@/pages/Biography/Family'),
+    education: () => import('@/pages/Biography/Education')
   }
 
   const mapping = {
     'biography': pages.about,
-    'biography.family': pages.family
+    'biography.family': pages.family,
+    'biography.education': pages.education
   }
+
+  const withPaddingTop = ['biography.family']
 
   export default {
     components: { Navbar, SubNavbar },
@@ -30,7 +34,8 @@
       return {
         subNavItems: [
           { text: 'About José Rizal', route: 'biography' },
-          { text: 'Family', route: 'biography.family' }
+          { text: 'Family', route: 'biography.family' },
+          { text: 'Education', route: 'biography.education' }
         ]
       }
     },
@@ -43,10 +48,18 @@
 
     created () {
       this.$root.setPageTitle('Biography')
+    },
+
+    methods: {
+      hasPaddingTop () {
+        return withPaddingTop.indexOf(this.$route.name) >= 0
+      }
     }
   }
 </script>
 
 <style lang="scss" scoped>
-
+  .page {
+    padding-top: 120px;
+  }
 </style>

@@ -56,7 +56,7 @@
     }
 
     .overlay {
-      background: rgba(0, 50, 95, 0.5);
+      background: rgba(105, 52, 23, 0.5);
     }
   }
 

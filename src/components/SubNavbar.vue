@@ -106,7 +106,7 @@
         color: #e8b396;
 
         &.is-active {
-          background-color: #924820;
+          background-color: transparent;
           color: #fff;
         }
 

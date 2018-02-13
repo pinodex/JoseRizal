@@ -1,0 +1,55 @@
+[
+  {
+    "title": "Sample Entry 01",
+    "slug": "sample-entry-01",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "banner": "/static/img/placeholder.gif"
+  },
+
+  {
+    "title": "Sample Entry 02",
+    "slug": "sample-entry-02",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "banner": "/static/img/placeholder.gif"
+  },
+
+  {
+    "title": "Sample Entry 03",
+    "slug": "sample-entry-03",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "banner": "/static/img/placeholder.gif"
+  },
+
+  {
+    "title": "Sample Entry 04",
+    "slug": "sample-entry-04",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "banner": "/static/img/placeholder.gif"
+  },
+
+  {
+    "title": "Sample Entry 05",
+    "slug": "sample-entry-05",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "banner": "/static/img/placeholder.gif"
+  },
+
+  {
+    "title": "Sample Entry 06",
+    "slug": "sample-entry-06",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "banner": "/static/img/placeholder.gif"
+  },
+
+  {
+    "title": "Sample Entry 07",
+    "slug": "sample-entry-07",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  },
+
+  {
+    "title": "Sample Entry 08",
+    "slug": "sample-entry-08",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  }
+]

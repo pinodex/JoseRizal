@@ -26,9 +26,21 @@ const router = new Router({
     },
 
     {
+      path: '/biography/education',
+      name: 'biography.education',
+      component: () => import('@/pages/Biography/Index')
+    },
+
+    {
       path: '/blog',
       name: 'blog',
       component: () => import('@/pages/Blog/Index')
+    },
+
+    {
+      path: '/blog/:slug',
+      name: 'blog.entry',
+      component: () => import('@/pages/Blog/Entry')
     },
 
     {
