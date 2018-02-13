@@ -2,7 +2,7 @@
     <transition name="slide-down">
     <nav class="navbar is-dark has-shadow is-fixed-top" v-show="isNavbarVisible">
       <div class="container">
-        <div class="navbar-brand">
+        <div class="navbar-brand" v-if="activeItem">
           <div class="navbar-item">
             {{ activeItem.text }}
           </div>
@@ -16,8 +16,8 @@
           <div class="navbar-start">
             <template v-for="(item, i) in items">
               <router-link v-if="item.route" class="navbar-item"
-                :class="{ 'is-active': isItemActive(item.route) }"
-                :to="{ name: item.route }">
+                :class="{ 'is-active': isItemActive(item) }"
+                :to="{ name: item.route, params: (item.params || {}) }">
 
                 {{ item.text }}
               </router-link>
@@ -42,6 +42,11 @@
       items: {
         type: Array,
         default: []
+      },
+
+      autoActive: {
+        type: Boolean,
+        default: true
       }
     },
 
@@ -71,8 +76,12 @@
     },
 
     methods: {
-      isItemActive (route) {
-        return this.$route.name == route
+      isItemActive (item) {
+        if (this.autoActive) {
+          return this.$route.name == item.route
+        }
+
+        return item.active
       },
 
       toggleMenu () {

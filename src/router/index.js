@@ -44,15 +44,21 @@ const router = new Router({
     },
 
     {
-      path: '/photos',
-      name: 'photos',
-      component: () => import('@/pages/Photos/Index')
-    },
-
-    {
       path: '/works',
       name: 'works',
       component: () => import('@/pages/Works/Index')
+    },
+
+    {
+      path: '/works/:category',
+      name: 'works.category',
+      component: () => import('@/pages/Works/Index')
+    },
+
+    {
+      path: '/works/view/:slug',
+      name: 'works.view',
+      component: () => import('@/pages/Works/Work')
     }
   ],
 

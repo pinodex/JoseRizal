@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Paintings",
+    "slug": "paintings"
+  },
+
+  {
+    "title": "Literatures",
+    "slug": "literatures"
+  },
+
+  {
+    "title": "Discoveries",
+    "slug": "discoveries"
+  }
+]

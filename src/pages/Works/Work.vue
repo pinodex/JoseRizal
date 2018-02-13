@@ -3,13 +3,18 @@
     <navbar :collapse="true" :shadow="true"></navbar>
 
     <transition name="fade">
-      <div class="hero is-dark is-fullheight header-banner" :style="headerStyle" v-if="entry">
+      <div class="hero is-dark is-fullheight" :style="style" v-if="work">
         <div class="overlay"></div>
 
         <div class="hero-body">
           <div class="container has-text-centered">
-            <h1 class="title">{{ entry.title }}</h1>
-            <p>{{ entry.description }}</p>
+            <div class="columns is-centered">
+              <div class="column is-6">
+                <h1 class="title">{{ work.title }}</h1>
+
+                <p>{{ work.description }}</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -31,26 +36,21 @@
 
 <script>
   import Navbar from '@/components/Navbar'
-  import entries from '@/data/blog'
 
   export default {
     components: { Navbar },
 
     data () {
       return {
-        entry: null,
+        work: null,
         content: null
       }
     },
 
     computed: {
-      headerStyle () {
-        if (!this.entry) {
-          return {}
-        }
-
+      style () {
         return {
-          backgroundImage: `url(${this.entry.banner})`
+          backgroundImage: `url(${this.work.banner})`
         }
       }
     },
@@ -58,45 +58,17 @@
     mounted () {
       let slug = this.$route.params.slug
 
-      import(`@/data/blog/${slug}`)
-        .then(entry => {
-          this.entry = entry
+      import(`@/data/works/${slug}`)
+        .then(work => this.work = work)
 
-          this.$root.setPageTitle(`${entry.title} - Blog`)
-        })
-
-      import(`@/data/blog/${slug}/content.md`)
+      import(`@/data/works/${slug}/content.md`)
         .then(content => this.content = content.default)
     }
   }
 </script>
 
 <style lang="scss" scoped>
-  .main-container {
-    padding-top: 72px;
-  }
-
-  .entry {
-    margin-bottom: 1rem;
-
-    .details {
-      padding: 1rem;
-    }
-
-    .name {
-      text-transform: uppercase;
-
-      a {
-        color: #bc5d29;
-      }
-    }
-
-    .description {
-      font-size: 0.8rem;
-    }
-  }
-
-  .header-banner {
+  .hero {
     background-position: center;
     background-size: cover;
 
@@ -109,7 +81,7 @@
       right: 0;
       bottom: 0;
 
-      background: rgba(0, 0, 0, 0.75);
+      background: rgba(0, 0, 0, 0.5)
     }
   }
 

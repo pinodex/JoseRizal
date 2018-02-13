@@ -1,0 +1,81 @@
+[
+  {
+    "title": "Sample Work 01",
+    "slug": "sample-work-01",
+    "description": "Lorem Ipsum",
+    "category": "paintings",
+    "banner": "/static/img/placeholder.gif"
+  },
+
+  {
+    "title": "Sample Work 02",
+    "slug": "sample-work-02",
+    "description": "Lorem Ipsum",
+    "category": "paintings",
+    "banner": "/static/img/placeholder.gif"
+  },
+
+  {
+    "title": "Sample Work 03",
+    "slug": "sample-work-03",
+    "description": "Lorem Ipsum",
+    "category": "paintings",
+    "banner": "/static/img/placeholder.gif"
+  },
+
+  {
+    "title": "Sample Work 04",
+    "slug": "sample-work-04",
+    "description": "Lorem Ipsum",
+    "category": "paintings",
+    "banner": "/static/img/placeholder.gif"
+  },
+
+  {
+    "title": "Sample Work 05",
+    "slug": "sample-work-05",
+    "description": "Lorem Ipsum",
+    "category": "paintings",
+    "banner": "/static/img/placeholder.gif"
+  },
+
+  {
+    "title": "Sample Work 06",
+    "slug": "sample-work-06",
+    "description": "Lorem Ipsum",
+    "category": "literatures",
+    "banner": "/static/img/placeholder.gif"
+  },
+
+  {
+    "title": "Sample Work 07",
+    "slug": "sample-work-07",
+    "description": "Lorem Ipsum",
+    "category": "literatures",
+    "banner": "/static/img/placeholder.gif"
+  },
+
+  {
+    "title": "Sample Work 08",
+    "slug": "sample-work-08",
+    "description": "Lorem Ipsum",
+    "category": "literatures",
+    "banner": "/static/img/placeholder.gif"
+  },
+
+  {
+    "title": "Sample Work 09",
+    "slug": "sample-work-09",
+    "description": "Lorem Ipsum",
+    "category": "literatures",
+    "banner": "/static/img/placeholder.gif"
+  },
+
+  {
+    "title": "Sample Work 10",
+    "slug": "sample-work-10",
+    "description": "Lorem Ipsum",
+    "category": "literatures",
+    "banner": "/static/img/placeholder.gif"
+  }
+]
