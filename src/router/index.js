@@ -14,6 +14,12 @@ const router = new Router({
     },
 
     {
+      path: '/about',
+      name: 'about',
+      component: () => import('@/pages/About')
+    },
+
+    {
       path: '/biography',
       name: 'biography',
       component: () => import('@/pages/Biography/Index')
@@ -50,9 +56,9 @@ const router = new Router({
     },
 
     {
-      path: '/works/:category',
+      path: '/works/:slug',
       name: 'works.category',
-      component: () => import('@/pages/Works/Index')
+      component: () => import('@/pages/Works/Category')
     },
 
     {

@@ -2,5 +2,6 @@
   "title": "Sample Work 04",
   "slug": "sample-work-04",
   "description": "Lorem Ipsum",
-  "category": "painting"
+  "category": "painting",
+  "banner": "/static/img/placeholder.gif"
 }

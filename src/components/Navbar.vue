@@ -31,7 +31,7 @@
           </div>
 
           <div class="navbar-end">
-            <a class="navbar-item" href="/about">About</a>
+            <router-link class="navbar-item" :to="{ name: 'about' }">About</router-link>
           </div>
         </div>
       </div>

@@ -1,16 +1,19 @@
 [
   {
     "title": "Paintings",
-    "slug": "paintings"
+    "slug": "paintings",
+    "banner": "/static/img/placeholder.gif"
   },
 
   {
     "title": "Literatures",
-    "slug": "literatures"
+    "slug": "literatures",
+    "banner": "/static/img/placeholder.gif"
   },
 
   {
     "title": "Discoveries",
-    "slug": "discoveries"
+    "slug": "discoveries",
+    "banner": "/static/img/placeholder.gif"
   }
 ]

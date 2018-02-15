@@ -1,22 +1,19 @@
 <template>
-  <div class="hero is-dark is-fullheight" :style="style">
+  <div class="entry">
+    <transition name="fade">
+      <div :style="backgroundStyle" v-if="backgroundReady" class="background"></div>
+    </transition>
+
     <div class="overlay"></div>
 
-    <div class="hero-body">
-      <div class="container has-text-centered">
-        <div class="columns is-centered">
-          <div class="column is-6">
-            <h1 class="title">{{ work.title }}</h1>
+    <div class="contents has-text-centered">
+      <div>
+        <h1 class="title">{{ work.title }}</h1>
 
-            <p>{{ work.description }}</p>
-
-            <p class="details-link">
-              <router-link :to="{ name: 'works.view', params: { slug: work.slug } }" class="button is-small">
-                More Details
-              </router-link>
-            </p>
-          </div>
-        </div>
+        <p>
+          <router-link :to="{ name: 'works.view', params: { slug: work.slug } }"
+            class="button is-light is-outlined">View</router-link>
+        </p>
       </div>
     </div>
   </div>
@@ -30,35 +27,67 @@
       }
     },
 
+    data () {
+      return {
+        backgroundReady: false
+      }
+    },
+
     computed: {
-      style () {
+      backgroundStyle () {
+        if (!this.backgroundReady) {
+          return {}
+        }
+
         return {
           backgroundImage: `url(${this.work.banner})`
         }
       }
+    },
+
+    mounted () {
+      let banner = new Image()
+
+      banner.src = this.work.banner
+      banner.onload = () => this.backgroundReady = true
     }
   }
 </script>
 
 <style lang="scss" scoped>
-  .hero {
-    background-position: center;
-    background-size: cover;
-
+  .entry {
     position: relative;
+    height: 300px;
 
-    .overlay {
+    .overlay,
+    .background,
+    .contents {
       position: absolute;
       top: 0;
       left: 0;
       right: 0;
       bottom: 0;
-
-      background: rgba(0, 0, 0, 0.5)
     }
-  }
 
-  .details-link {
-    margin-top: 1rem;
+    .overlay {
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .background {
+      background-position: center;
+      background-size: cover;
+    }
+
+    .contents {
+      height: 100%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      h1 {
+        color: #fff;
+      }
+    }
   }
 </style>

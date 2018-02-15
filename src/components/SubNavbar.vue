@@ -1,5 +1,5 @@
 <template>
-    <transition name="slide-down">
+  <transition name="slide-down">
     <nav class="navbar is-dark has-shadow is-fixed-top" v-show="isNavbarVisible">
       <div class="container">
         <div class="navbar-brand" v-if="activeItem">
@@ -47,12 +47,17 @@
       autoActive: {
         type: Boolean,
         default: true
+      },
+
+      animateIn: {
+        type: Boolean,
+        default: true
       }
     },
 
     data () {
       return {
-        isNavbarVisible: false,
+        isNavbarVisible: !this.animateIn,
         isMenuVisible: false
       }
     },

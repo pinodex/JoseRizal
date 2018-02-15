@@ -1,92 +1,33 @@
 <template>
   <section>
-    <navbar :collapse="true" :shadow="false"></navbar>
-    <sub-navbar :items="subNavItems" :auto-active="false"></sub-navbar>
+    <navbar :collapse="true"></navbar>
 
-    <entry v-for="(entry, i) in entries" :key="i" :work="entry"></entry>
+    <router-link v-for="(category, i) in categories" :key="i"
+      :to="{ name: 'works.category', params: { slug: category.slug } }">
+
+      <category :category="category" />
+    </router-link>
   </section>
 </template>
 
 <script>
   import Navbar from '@/components/Navbar'
-  import SubNavbar from '@/components/SubNavbar'
-  import Entry from '@/components/Works/Entry'
-
-  import entries from '@/data/works'
-  import categories from '@/data/works/categories'
+  import Category from '@/components/Works/Category'
 
   export default {
-    components: { Navbar, SubNavbar, Entry },
+    components: { Navbar, Category },
 
-    computed: {
-      entries () {
-        let slug = this.$route.params.category
-
-        if (!slug) {
-          return entries
-        }
-
-        return entries.filter(entry => entry.category == slug)
-      },
-
-      subNavItems () {
-        let slug = this.$route.params.category,
-            items = [
-              {
-                text: "All",
-                route: "works",
-                active: !slug
-              }
-            ]
-
-        categories.forEach((category, index) => {
-          items.push({
-            text: category.title,
-            route: 'works.category',
-            active: category.slug == slug,
-            params: {
-              category: category.slug
-            }
-          })
-        })
-
-        return items
-      },
-
-      currentCategory () {
-        let slug = this.$route.params.category,
-            currentCategory = null
-
-        if (slug) {
-          categories.forEach(category => {
-            if (category.slug == slug) {
-              currentCategory = category
-            }
-          })
-        }
-
-        return currentCategory
+    data () {
+      return {
+        categories: []
       }
     },
 
-    watch: {
-      currentCategory (newValue, oldValue) {
-        if (!newValue) {
-          this.$root.setPageTitle('Works')
-
-          return
-        }
-
-        this.$root.setPageTitle(`${newValue.title} - Works`)
-      }
-    },
-
-    created () {
+    mounted () {
       this.$root.setPageTitle('Works')
 
-      if (this.currentCategory) {
-        this.$root.setPageTitle(`${this.currentCategory.title} - Works`)
-      }
+      import(`@/data/works/categories`)
+        .then(categories => this.categories = categories)
     }
   }
 </script>
