@@ -33,7 +33,9 @@
         subNavItems: [
           { text: 'About José Rizal', route: 'biography' },
           { text: 'Family', route: 'biography.family' },
-          { text: 'Education', route: 'biography.education' }
+          { text: 'Education', route: 'biography.education' },
+          { text: 'Monuments', route: 'biography.momuments' },
+          { text: 'Philosophies', route: 'biography.philosophies' }
         ]
       }
     },
