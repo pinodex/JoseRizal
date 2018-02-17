@@ -1,5 +1,5 @@
 <template>
-  <div class="entry">
+  <div class="entry" :style="style">
     <transition name="fade">
       <div :style="backgroundStyle" v-if="backgroundReady" class="background"></div>
     </transition>
@@ -24,6 +24,11 @@
     props: {
       work: {
         type: Object
+      },
+
+      height: {
+        type: Number,
+        default: 300
       }
     },
 
@@ -34,6 +39,12 @@
     },
 
     computed: {
+      style () {
+        return {
+          height: `${this.height}px`
+        }
+      },
+
       backgroundStyle () {
         if (!this.backgroundReady) {
           return {}
@@ -57,7 +68,6 @@
 <style lang="scss" scoped>
   .entry {
     position: relative;
-    height: 300px;
 
     .overlay,
     .background,

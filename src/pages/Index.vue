@@ -29,18 +29,7 @@
                 <section v-if="featuredWork">
                   <h2 class="subtitle">Featured Work</h2>
 
-                  <div class="card featured-work">
-                    <div class="card-image">
-                      <figure class="image is-16by9">
-                        <img :src="featuredWork.banner">
-                      </figure>
-                    </div>
-
-                    <router-link :to="{ name: 'works.view', params: { slug: featuredWork.slug } }"
-                      class="overlay-content">
-                      <p class="is-size-5">{{ featuredWork.title }}</p>
-                    </router-link>
-                  </div>
+                  <entry :work="featuredWork" :height="250"></entry>
                 </section>
               </transition>
 
@@ -75,9 +64,10 @@
 
   import Navbar from '@/components/Navbar'
   import IndexHeroMain from '@/components/Index/HeroMain'
+  import Entry from '@/components/Works/Entry'
 
   export default {
-    components: { Navbar, IndexHeroMain },
+    components: { Navbar, IndexHeroMain, Entry },
 
     data () {
       return {
