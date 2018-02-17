@@ -21,13 +21,27 @@
 
               "_parents": [
                 {
-                  "id": "domingo-lamco",
-                  "name": "Domingo Lamco",
+                  "id": "domingo-lamco-mercado",
+                  "name": "Domingo Lamco (Mercado)",
 
                   "_parents": [
                     {
                       "id": "cua-siong-co",
-                      "name": "Cua Siong-Co"
+                      "name": "Cua Siong-Co",
+
+                      "_parents": [
+                        {
+                          "id": "ke-cong-you",
+                          "name": "Ke Cong-you",
+
+                          "_parents": [
+                            {
+                              "id": "ke-cai-jing",
+                              "name": "Ke Cai-jing"
+                            }
+                          ]
+                        }
+                      ]
                     },
 
                     {
@@ -89,12 +103,91 @@
       "_parents": [
         {
           "id": "lorenzo-alberto-alonzo",
-          "name": "Lorenzo Alberto Alonzo"
+          "name": "Lorenzo Alberto Alonzo",
+
+          "_parents": [
+            {
+              "id": "cipriano-alonso",
+              "name": "Cipriano Alonso",
+
+              "_parents": [
+                {
+                  "id": "gregorio-alonso",
+                  "name": "Gregorio Alonso"
+                }
+              ]
+            },
+
+            {
+              "id": "maría-alejandro",
+              "name": "María Alejandro",
+
+              "_parents": [
+                {
+                  "id": "capitan-mariano-alejandro",
+                  "name": "Capitan Mariano Alejandro",
+
+                  "_parents": [
+                    {
+                      "id": "juan-de-la-cruz",
+                      "name": "Juan de la Cruz"
+                    },
+
+                    {
+                      "id": "maría-sebastián",
+                      "name": "María Sebastián"
+                    }
+                  ]
+                },
+
+                {
+                  "id": "faustina-florentina",
+                  "name": "Faustina Florentina"
+                }
+              ]
+            }
+          ]
         },
 
         {
           "id": "brigida-de-quintos",
-          "name": "Brigida de Quintos"
+          "name": "Brigida de Quintos",
+
+          "_parents": [
+            {
+              "id": "manuel-de-quintos-ii",
+              "name": "Manuel de Quintos II",
+
+              "_parents": [
+                {
+                  "id": "manuel-de-quintos-i",
+                  "name": "Manuel de Quintos I"
+                },
+
+                {
+                  "id": "rosa-sunio-de-quintos",
+                  "name": "Rosa Sunio de Quintos"
+                }
+              ]
+            },
+
+            {
+              "id": "regina-ursua",
+              "name": "Regina Ursua",
+
+              "_parents": [
+                {
+                  "id": "eugenio-ursua",
+                  "name": "Eugenio Ursua"
+                },
+
+                {
+                  "id": "benigna-ochoa",
+                  "name": "Benigna Ochoa"
+                }
+              ]
+            }
+          ]
         }
       ]
     }
