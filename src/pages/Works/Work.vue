@@ -11,9 +11,7 @@
           <div class="container has-text-centered">
             <div class="columns is-centered">
               <div class="column is-6">
-                <h1 class="title">{{ work.title }}</h1>
-
-                <p>{{ work.description }}</p>
+                <h1 class="is-size-1">{{ work.title }}</h1>
               </div>
             </div>
           </div>
@@ -84,8 +82,10 @@
       import('@/data/works/categories')
         .then(categories => this.categories = categories)
 
-      import(`@/data/works/${slug}`)
-        .then(work => this.work = work)
+      import(`@/data/works`)
+        .then(works => {
+          this.work = works.find(w => w.slug == slug)
+        })
 
       import(`@/data/works/${slug}/content.md`)
         .then(content => this.content = content.default)

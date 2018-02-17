@@ -2,18 +2,30 @@
   {
     "title": "Paintings",
     "slug": "paintings",
-    "banner": "/static/img/placeholder.gif"
+    "banner": "/static/img/paintings.jpg"
   },
 
   {
     "title": "Literatures",
     "slug": "literatures",
-    "banner": "/static/img/placeholder.gif"
+    "banner": "/static/img/pluma-at-papel.jpg"
+  },
+
+  {
+    "title": "Poems",
+    "slug": "poems",
+    "banner": "/static/img/papel.jpg"
+  },
+
+  {
+    "title": "Sculptures",
+    "slug": "sculptures",
+    "banner": "/static/img/sculpture.jpg"
   },
 
   {
     "title": "Discoveries",
     "slug": "discoveries",
-    "banner": "/static/img/placeholder.gif"
+    "banner": "/static/img/magnifying-glass.jpg"
   }
 ]
