@@ -35,7 +35,8 @@
           { text: 'Family', route: 'biography.family' },
           { text: 'Education', route: 'biography.education' },
           { text: 'Monuments', route: 'biography.momuments' },
-          { text: 'Philosophies', route: 'biography.philosophies' }
+          { text: 'Philosophies', route: 'biography.philosophies' },
+          { text: 'Personalitites', route: 'biography.personalitites' }
         ]
       }
     },

@@ -11,12 +11,16 @@
 
               <div class="content">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  The National Hero of the Philippines and pride of the Malayan Race. He was born on June 19, 1861 in the town of Calamba, Laguna.
+                </p>
+
+                <p>
+                  He was the seventh child in a family of 11 children (2 boys, 9 girls) of <strong>Francisco Mercado Rizal</strong> and <strong>Teodora Alonzo y Quintos</strong>.
+                </p>
+
+                <p>
+                  Baptized by Rev. Ruffino Collantes at the Catholic of Calamba with Rev. Pedro Casanas as sponsor on June 22, 1861.
+                </p>
               </div>
             </div>
           </div>
@@ -33,12 +37,23 @@
 
               <div class="content">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  <span class="year-marker">1864-1865</span> Rizal learned the alphabet from his mother at the age of three. However, his sister <strong>Conception</strong>, the eighth child in the family died at the age of three when Rizal was four years old. He remembered himself having shed real tears for the first time.
+                </p>
+
+                <p>
+                  <span class="year-marker">1865</span> His mother taught him how to read and write, while his father hired Leon Monroy to teach Rizal the rudiments of Latin.
+                </p>
+
+                <p>
+                  <span class="year-marker">1868</span> Rizal made a pilgrimage to Antipolo with his father to fulfill the vow of his mother to take the child to the Shrine of the Virgin of Antipolo.
+                </p>
+
+                <p>
+                  They proceeded to Manila and visited his sister Saturnina who was at the time studying in the La Concordia College in Sta. Ana.
+                </p>
+
+                <p>
+                  <span class="year-marker">1869</span> At the age of eight, Rizal wrote his first poem entitled &ldquo;Sa Aking Mga Kabata.&rdquo; The poem was written in tagalog and had for its theme &ldquo;Love of One&rsquo;s Language.&rdquo;
                 </p>
               </div>
             </div>
@@ -88,6 +103,11 @@
       left: 0;
       bottom: 0;
     }
+  }
+
+  .year-marker {
+    font-weight: bold;
+    color: #999;
   }
 </style>
 
