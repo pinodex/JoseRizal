@@ -53,5 +53,40 @@
     "slug": "portrait-of-morayta",
     "category": "paintings",
     "banner": "/static/files/paintings/portrait-of-morayta.jpg"
+  },
+
+  {
+    "title": "Noli Me Tangere",
+    "slug": "noli-me-tangere",
+    "category": "literatures",
+    "banner": "/static/files/literatures/noli-me-tangere.jpg"
+  },
+
+  {
+    "title": "El Filibusterismo",
+    "slug": "el-filibusterismo",
+    "category": "literatures",
+    "banner": "/static/files/literatures/el-filibusterismo.jpg"
+  },
+
+  {
+    "title": "Mi Ultimo Adios",
+    "slug": "mi-ultimo-adios",
+    "category": "literatures",
+    "banner": "/static/files/literatures/mi-ultimo-adios.jpg"
+  },
+
+  {
+    "title": "Sa Aking Kabata",
+    "slug": "sa-aking-kabata",
+    "category": "literatures",
+    "banner": "/static/files/literatures/sa-aking-kabata.jpg"
+  },
+
+  {
+    "title": "To The Filipino Youth",
+    "slug": "to-the-filipino-youth",
+    "category": "literatures",
+    "banner": "/static/files/paper.jpg"
   }
 ]
