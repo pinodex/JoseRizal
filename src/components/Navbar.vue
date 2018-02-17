@@ -123,7 +123,7 @@
 
 <style lang="scss" scoped>
   .navbar {
-    z-index: 50;
+    z-index: 50 !important;
   }
 
   .navbar-burger {
