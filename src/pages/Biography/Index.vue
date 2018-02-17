@@ -17,14 +17,18 @@
     about: () => import('@/pages/Biography/About'),
     family: () => import('@/pages/Biography/Family'),
     education: () => import('@/pages/Biography/Education'),
-    monuments: () => import('@/pages/Biography/Monuments')
+    monuments: () => import('@/pages/Biography/Monuments'),
+    philosophies: () => import('@/pages/Biography/Philosophies'),
+    personalities: () => import('@/pages/Biography/Personalities')
   }
 
   const mapping = {
     'biography': pages.about,
     'biography.family': pages.family,
     'biography.education': pages.education,
-    'biography.monuments': pages.monuments
+    'biography.monuments': pages.monuments,
+    'biography.philosophies': pages.philosophies,
+    'biography.personalities': pages.personalities
   }
 
   export default {
@@ -38,7 +42,7 @@
           { text: 'Education', route: 'biography.education' },
           { text: 'Monuments', route: 'biography.monuments' },
           { text: 'Philosophies', route: 'biography.philosophies' },
-          { text: 'Personalitites', route: 'biography.personalitites' }
+          { text: 'Personalities', route: 'biography.personalities' }
         ]
       }
     },

@@ -44,6 +44,18 @@ const router = new Router({
     },
 
     {
+      path: '/biography/philosophies',
+      name: 'biography.philosophies',
+      component: () => import('@/pages/Biography/Index')
+    },
+
+    {
+      path: '/biography/personalities',
+      name: 'biography.personalities',
+      component: () => import('@/pages/Biography/Index')
+    },
+
+    {
       path: '/blog',
       name: 'blog',
       component: () => import('@/pages/Blog/Index')
