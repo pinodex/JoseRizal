@@ -2,7 +2,7 @@
   <div id="app">
     <router-view></router-view>
 
-    <footer class="footer page-footer">
+    <footer class="footer page-footer" v-if="hasFooter">
       <div class="container">
         <div class="columns is-centered">
           <div class="column is-6">
@@ -130,6 +130,12 @@
 <script>
   export default {
     name: 'App',
+
+    computed: {
+      hasFooter () {
+        return this.$route.name != 'biography.family'
+      }
+    },
 
     created () {
       window.addEventListener('scroll', e => {
