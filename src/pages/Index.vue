@@ -6,24 +6,41 @@
       <index-hero-main></index-hero-main>
     </div>
 
-    <div class="container">
-      <div class="columns main-content">
-        <div class="column">
-          <h1 class="title">Know the life, history, and works of Rizal</h1>
+    <div class="hero is-fullheight">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns">
+            <div class="column is-8">
+              <div class="content">
+                <h1 class="title">Know the life, history, and works of Rizal</h1>
+
+                <p>
+                  Welcome to Jose Rizal Online! This website provides an interactive view in the life, history, and works of Jose Protacio Alonso Realonda Mercado Rizal.
+                </p>
+
+                <p>
+                  In this website you will the biography, geneology, education, travels, paintings, literatures, sculptures, sketches, and discoveries of Jose Rizal.
+                </p>
+              </div>
+            </div>
+
+            <div class="column">
+              <h2 class="subtitle">Featured Content</h2>
+              <hr />
+
+              <h2 class="subtitle">Word of the Day</h2>
+              <hr />
+            </div>
+          </div>
         </div>
       </div>
+    </div>
 
-      <div class="columns">
-        <div class="column is-6">
-          <div class="content">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+    <div class="hero is-fullheight is-dark">
+      <div class="hero-body">
+        <div class="container is-fluid">
+          <div class="has-text-centered">
+            <h1 class="is-size-1">Hero&lsquo;s Timeline</h1>
           </div>
         </div>
       </div>
@@ -47,9 +64,5 @@
 <style lang="scss" scoped>
   .main-hero {
     position: relative;
-  }
-
-  .main-content {
-    margin-top: 1rem;
   }
 </style>

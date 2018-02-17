@@ -4,7 +4,7 @@
     <sub-navbar :items="subNavItems"></sub-navbar>
 
     <transition name="fade" mode="out-in">
-      <component :is="currentPage" :class="{ page: hasPaddingTop() }"></component>
+      <component :is="currentPage"></component>
     </transition>
   </section>
 </template>
@@ -24,8 +24,6 @@
     'biography.family': pages.family,
     'biography.education': pages.education
   }
-
-  const withPaddingTop = ['biography.family']
 
   export default {
     components: { Navbar, SubNavbar },
@@ -48,18 +46,6 @@
 
     created () {
       this.$root.setPageTitle('Biography')
-    },
-
-    methods: {
-      hasPaddingTop () {
-        return withPaddingTop.indexOf(this.$route.name) >= 0
-      }
     }
   }
 </script>
-
-<style lang="scss" scoped>
-  .page {
-    padding-top: 120px;
-  }
-</style>
