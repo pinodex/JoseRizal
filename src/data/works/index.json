@@ -88,5 +88,26 @@
     "slug": "to-the-filipino-youth",
     "category": "literatures",
     "banner": "/static/files/paper.jpg"
+  },
+
+  {
+    "title": "Draco Rizali",
+    "slug": "draco-rizali",
+    "category": "discoveries",
+    "banner": "/static/files/discoveries/draco-rizali.jpg"
+  },
+
+  {
+    "title": "Apogania Rizali",
+    "slug": "apogania-rizali",
+    "category": "discoveries",
+    "banner": "/static/files/discoveries/apogania-rizali.jpg"
+  },
+
+  {
+    "title": "Rhacophorus Rizali",
+    "slug": "rhacophorus-rizali",
+    "category": "discoveries",
+    "banner": "/static/files/discoveries/rhacophorus-rizali.jpg"
   }
 ]

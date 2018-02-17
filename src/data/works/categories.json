@@ -12,12 +12,6 @@
   },
 
   {
-    "title": "Poems",
-    "slug": "poems",
-    "banner": "/static/img/papel.jpg"
-  },
-
-  {
     "title": "Sculptures",
     "slug": "sculptures",
     "banner": "/static/img/sculpture.jpg"
