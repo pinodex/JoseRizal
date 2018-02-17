@@ -11,6 +11,14 @@
     image-rendering: crisp-edges;
   }
 
+  .container {
+    padding: 0 1rem;
+  }
+
+  .navbar .container {
+    padding: 0;
+  }
+
   .fade-enter-active,
   .fade-leave-active {
     transition: opacity .3s;

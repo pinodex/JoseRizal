@@ -5,7 +5,7 @@
       v-show="isNavbarVisible">
 
       <div class="container">
-        <div class="navbar-brand">
+        <router-link :to="{ name: 'index' }" class="navbar-brand">
           <div class="navbar-item">
             <img src="/static/img/jose-rizal-vector-200.png" alt="Jose Rizal Face" />
             <img src="/static/img/jose-rizal-signature-400.png" />
@@ -16,7 +16,7 @@
             <span></span>
             <span></span>
           </button>
-        </div>
+        </router-link>
 
         <div class="navbar-menu" :class="{'is-active': isMenuVisible}">
           <button class="delete is-large" @click="hideMenu()"></button>
