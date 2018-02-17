@@ -16,13 +16,15 @@
   const pages = {
     about: () => import('@/pages/Biography/About'),
     family: () => import('@/pages/Biography/Family'),
-    education: () => import('@/pages/Biography/Education')
+    education: () => import('@/pages/Biography/Education'),
+    monuments: () => import('@/pages/Biography/Monuments')
   }
 
   const mapping = {
     'biography': pages.about,
     'biography.family': pages.family,
-    'biography.education': pages.education
+    'biography.education': pages.education,
+    'biography.monuments': pages.monuments
   }
 
   export default {
@@ -34,7 +36,7 @@
           { text: 'About José Rizal', route: 'biography' },
           { text: 'Family', route: 'biography.family' },
           { text: 'Education', route: 'biography.education' },
-          { text: 'Monuments', route: 'biography.momuments' },
+          { text: 'Monuments', route: 'biography.monuments' },
           { text: 'Philosophies', route: 'biography.philosophies' },
           { text: 'Personalitites', route: 'biography.personalitites' }
         ]

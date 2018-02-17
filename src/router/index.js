@@ -38,6 +38,12 @@ const router = new Router({
     },
 
     {
+      path: '/biography/monuments',
+      name: 'biography.monuments',
+      component: () => import('@/pages/Biography/Index')
+    },
+
+    {
       path: '/blog',
       name: 'blog',
       component: () => import('@/pages/Blog/Index')
