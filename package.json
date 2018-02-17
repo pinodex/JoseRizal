@@ -53,6 +53,7 @@
     "shelljs": "^0.7.6",
     "uglifyjs-webpack-plugin": "^1.1.1",
     "url-loader": "^0.5.8",
+    "vis": "^4.21.0",
     "vue-loader": "^13.3.0",
     "vue-markdown-loader": "^2.3.0",
     "vue-progressbar": "^0.7.3",

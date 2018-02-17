@@ -47,15 +47,7 @@
       </div>
     </div>
 
-    <div class="hero is-fullheight is-dark">
-      <div class="hero-body">
-        <div class="container is-fluid">
-          <div class="has-text-centered">
-            <h1 class="is-size-1">Hero&lsquo;s Timeline</h1>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!--<component :is="timeline"></component>-->
   </section>
 </template>
 
@@ -72,7 +64,9 @@
     data () {
       return {
         trivia: null,
-        featuredWork: null
+        featuredWork: null,
+
+        timeline: null
       }
     },
 
@@ -86,6 +80,8 @@
 
       import('@/data/works')
         .then(works => this.featuredWork = randomItem(works))
+
+      this.timeline = () => import('@/components/Index/Timeline')
     }
   }
 </script>
