@@ -25,11 +25,33 @@
             </div>
 
             <div class="column">
-              <h2 class="subtitle">Featured Content</h2>
-              <hr />
+              <transition name="slide-fade">
+                <section v-if="featuredWork">
+                  <h2 class="subtitle">Featured Work</h2>
 
-              <h2 class="subtitle">Word of the Day</h2>
-              <hr />
+                  <div class="card featured-work">
+                    <div class="card-image">
+                      <figure class="image is-16by9">
+                        <img :src="featuredWork.banner">
+                      </figure>
+                    </div>
+
+                    <router-link :to="{ name: 'works.view', params: { slug: featuredWork.slug } }"
+                      class="overlay-content">
+                      <p class="is-size-5">{{ featuredWork.title }}</p>
+                    </router-link>
+                  </div>
+                </section>
+              </transition>
+
+              <transition name="slide-fade">
+                <section v-if="trivia">
+                  <h2 class="subtitle did-you-know">Did you know?</h2>
+                  <div class="content" v-if="trivia">
+                    <p>{{ trivia }}</p>
+                  </div>
+                </section>
+              </transition>
             </div>
           </div>
         </div>
@@ -49,14 +71,31 @@
 </template>
 
 <script>
+  import randomItem from 'random-item'
+
   import Navbar from '@/components/Navbar'
   import IndexHeroMain from '@/components/Index/HeroMain'
 
   export default {
     components: { Navbar, IndexHeroMain },
 
+    data () {
+      return {
+        trivia: null,
+        featuredWork: null
+      }
+    },
+
     created () {
       this.$root.setPageTitle('Home')
+    },
+
+    mounted () {
+      import('@/data/trivia')
+        .then(trivias => this.trivia = randomItem(trivias))
+
+      import('@/data/works')
+        .then(works => this.featuredWork = randomItem(works))
     }
   }
 </script>
@@ -64,5 +103,36 @@
 <style lang="scss" scoped>
   .main-hero {
     position: relative;
+  }
+
+  .did-you-know {
+    margin-top: 2rem;
+  }
+
+  .featured-work {
+    position: relative;
+
+    .overlay-content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background: rgba(0, 0, 0, 0.5);
+
+      color: #fff;
+
+      transition: opacity 0.3s ease;
+      opacity: 0;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
   }
 </style>
