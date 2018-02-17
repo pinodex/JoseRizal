@@ -109,5 +109,229 @@
     "slug": "rhacophorus-rizali",
     "category": "discoveries",
     "banner": "/static/files/discoveries/rhacophorus-rizali.jpg"
+  },
+
+  {
+    "title": "Triumph of death over life",
+    "slug": "triumph-of-death-over-life",
+    "category": "sculptures",
+    "banner": "/static/files/sculptures/triumph-of-death-over-life.jpg"
+  },
+
+  {
+    "title": "Triumph of science over death",
+    "slug": "triumph-of-science-over-death",
+    "category": "sculptures",
+    "banner": "/static/files/sculptures/triumph-of-science-over-death.jpg"
+  },
+
+  {
+    "title": "Bust of Father Jose Guerrico",
+    "slug": "bust-of-father-jose-guerrico",
+    "category": "sculptures",
+    "banner": "/static/files/sculptures/bust-of-father-jose-guerrico.jpg"
+  },
+
+  {
+    "title": "Oyang Dapitana",
+    "slug": "oyang-dapitana",
+    "category": "sculptures",
+    "banner": "/static/files/sculptures/oyang-dapitana.jpg"
+  },
+
+  {
+    "title": "Model head of a Dapitan girl",
+    "slug": "model-head-of-a-dapitan-girl",
+    "category": "sculptures",
+    "banner": "/static/files/sculptures/model-head-of-a-dapitan-girl.jpg"
+  },
+
+  {
+    "title": "Sacred heart of Jesus",
+    "slug": "sacred-heart-of-jesus",
+    "category": "sculptures",
+    "banner": "/static/files/sculptures/sacred-heart-of-jesus.jpg"
+  },
+
+  {
+    "title": "Composite Statuette",
+    "slug": "composite-statuette",
+    "category": "sculptures",
+    "banner": "/static/files/sculptures/composite-statuette.jpg"
+  },
+
+  {
+    "title": "Mother's Revenge",
+    "slug": "mothers-revenge",
+    "category": "sculptures",
+    "banner": "/static/files/sculptures/mothers-revenge.jpg"
+  },
+
+  {
+    "title": "Josephine Bracken (medallion)",
+    "slug": "josephine-bracken-medallion",
+    "category": "sculptures",
+    "banner": "/static/files/sculptures/josephine-bracken-medallion.jpg"
+  },
+
+  {
+    "title": "Dr. Francisco Mercado",
+    "slug": "dr-francisco-mercado",
+    "category": "sculptures",
+    "banner": "/static/files/sculptures/dr-francisco-mercado.jpg"
+  },
+
+  {
+    "title": "Prometheus Bound",
+    "slug": "prometheus-bound",
+    "category": "sculptures",
+    "banner": "/static/files/sculptures/prometheus-bound.jpg"
+  },
+
+  {
+    "title": "Bust of Felix Pardo de Tavera",
+    "slug": "bust-of-felix-pardo-de-tavera",
+    "category": "sculptures",
+    "banner": "/static/files/sculptures/bust-of-felix-pardo-de-tavera.jpg"
+  },
+
+  {
+    "title": "Image of Virgin Mary",
+    "slug": "image-of-virgin-mary",
+    "category": "sculptures",
+    "banner": "/static/files/sculptures/image-of-virgin-mary.jpg"
+  },
+
+  {
+    "title": "Wild Boar",
+    "slug": "wild-boar",
+    "category": "sculptures",
+    "banner": "/static/files/sculptures/wild-boar.jpg"
+  },
+
+  {
+    "title": "Orate Frantes",
+    "slug": "orate-frantes",
+    "category": "sculptures",
+    "banner": "/static/files/sculptures/orate-frantes.jpg"
+  },
+
+  {
+    "title": "San Antonio de Padua",
+    "slug": "san-antonio-de-padua",
+    "category": "sculptures",
+    "banner": "/static/files/sculptures/san-antonio-de-padua.jpg"
+  },
+
+  {
+    "title": "Bust of Dr. Ricardo Carnicero",
+    "slug": "bust-of-dr-ricardo-carnicero",
+    "category": "sculptures",
+    "banner": "/static/files/sculptures/bust-of-dr-ricardo-carnicero.jpg"
+  },
+
+  {
+    "title": "St. Paul the Hermit",
+    "slug": "st-paul-the-hermit",
+    "category": "sculptures",
+    "banner": "/static/files/sculptures/st-paul-the-hermit.jpg"
+  },
+
+  {
+    "title": "Bust of Augustus Ceasar",
+    "slug": "bust-of-augustus-ceasar",
+    "category": "sculptures",
+    "banner": "/static/files/sculptures/bust-of-augustus-ceasar.jpg"
+  },
+
+  {
+    "title": "Bust of Julius Ceasar",
+    "slug": "bust-of-julius-ceasar",
+    "category": "sculptures",
+    "banner": "/static/files/sculptures/bust-of-julius-ceasar.jpg"
+  },
+
+  {
+    "title": "Biscuit Mold",
+    "slug": "biscuit-mold",
+    "category": "sculptures",
+    "banner": "/static/files/sculptures/biscuit-mold.jpg"
+  },
+
+  {
+    "title": "Wooden Platters",
+    "slug": "wooden-platters",
+    "category": "sculptures",
+    "banner": "/static/files/sculptures/wooden-platters.jpg"
+  },
+
+  {
+    "title": "Three wooden tops of different sizes",
+    "slug": "three-wooden-tops-of-different-sizes",
+    "category": "sculptures",
+    "banner": "/static/files/sculptures/three-wooden-tops-of-different-sizes.jpg"
+  },
+
+  {
+    "title": "A bowl of a pipe representing a girl's head",
+    "slug": "a-bowl-of-a-pipe-representing-a-girls-head",
+    "category": "sculptures",
+    "banner": "/static/files/sculptures/a-bowl-of-a-pipe-representing-a-girls-head.jpg"
+  },
+
+  {
+    "title": "Josephine Sleeping",
+    "slug": "josephine-sleeping",
+    "category": "sculptures",
+    "banner": "/static/files/sculptures/josephine-sleeping.jpg"
+  },
+
+  {
+    "title": "Two gate columns",
+    "slug": "two-gate-columns",
+    "category": "sculptures",
+    "banner": "/static/files/sculptures/two-gate-columns.jpg"
+  },
+
+  {
+    "title": "Bust of his father",
+    "slug": "bust-of-his-father",
+    "category": "sculptures",
+    "banner": "/static/files/sculptures/bust-of-his-father.jpg"
+  },
+
+  {
+    "title": "Head of Egyptian",
+    "slug": "head-of-egyptian",
+    "category": "sculptures",
+    "banner": "/static/files/sculptures/head-of-egyptian.jpg"
+  },
+
+  {
+    "title": "Bust of Mirabeau",
+    "slug": "bust-of-mirabeau",
+    "category": "sculptures",
+    "banner": "/static/files/sculptures/bust-of-mirabeau.jpg"
+  },
+
+  {
+    "title": "A Filipino Girl Doll",
+    "slug": "a-filipina-girl-doll",
+    "category": "sculptures",
+    "banner": "/static/files/sculptures/a-filipina-girl-doll.jpg"
+  },
+
+  {
+    "title": "Josephine's Head",
+    "slug": "josephines-head",
+    "category": "sculptures",
+    "banner": "/static/files/sculptures/josephines-head.jpg"
+  },
+
+  {
+    "title": "A marionette in a form of a clown",
+    "slug": "a-marionette-in-a-form-of-a-clown",
+    "category": "sculptures",
+    "banner": "/static/files/sculptures/a-marionette-in-a-form-of-a-clown.jpg"
   }
 ]
