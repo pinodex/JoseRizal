@@ -1,6 +1,28 @@
 <template>
   <div id="app">
-    <router-view />
+    <router-view></router-view>
+
+    <footer class="footer page-footer">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-6">
+            <div class="content has-text-centered">
+              <p>
+                <img src="/static/img/sti-novaliches-logo-75.png" />
+              </p>
+
+              <p>
+                <em>All pictures and texts are property of their respective owners. All pictures and texts used in this website are for identification purposes only.</em>
+              </p>
+
+              <p>
+                <router-link :to="{ name: 'about' }">About this website</router-link>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <vue-progress-bar></vue-progress-bar>
   </div>
@@ -35,6 +57,10 @@
     bottom: 0;
 
     background: rgba(0, 0, 0, 0.75);
+  }
+
+  .page-footer {
+    margin-top: 1rem;
   }
 
   .fade-enter-active,
