@@ -29,6 +29,8 @@
     "css-loader": "^0.28.0",
     "d3": "^3.5.17",
     "d3plus": "^1.9.8",
+    "dagre": "^0.8.2",
+    "dagre-d3": "^0.4.18",
     "es6-promise": "^4.2.4",
     "extract-text-webpack-plugin": "^3.0.0",
     "file-loader": "^1.1.4",

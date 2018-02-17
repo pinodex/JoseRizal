@@ -1,42 +1,40 @@
 {
-  "id": "jose-rizal",
-  "name": "Jose Rizal",
+  "persons": [
+    {"id": "jose-rizal", "name": "Jose Rizal"},
+    {"id": "conception-rizal", "name": "Concepcion Rizal"},
+    {"id": "josefa-rizal", "name": "Josefa Rizal"},
+    {"id": "lucia-rizal", "name": "Lucia Rizal"},
+    {"id": "maria-rizal", "name": "Maria Rizal"},
+    {"id": "narcisa-rizal-lopez", "name": "Narcisa Rizal-Lopez"},
+    {"id": "olympia-rizal-ubaldo", "name": "Olympia Rizal-Ubaldo"},
+    {"id": "paciano-rizal", "name": "Paciano Rizal"},
+    {"id": "saturnina-rizal-hidalgo", "name": "Saturnina Rizal-Hidalgo"},
+    {"id": "soledad-rizal", "name": "Soledad Rizal"},
+    {"id": "trinidad-rizal", "name": "Trinidad Rizal"},
 
-  "_children": [],
+    {"id": "francisco-mercado-rizal", "name": "Francisco Mercado Rizal"},
+    {"id": "teodora-alonzo", "name": "Teodora de Quintos Alonzo"}
+  ],
 
-  "_parents": [
+  "connections": [
     {
-      "id": "francisco-mercado-rizal",
-      "name": "Francisco Mercado Rizal",
-
-      "_parents": [
-        {
-          "id": "juan-monica-mercado",
-          "name": "Juan Monica Mercado"
-        },
-
-        {
-          "id": "cirila-alejandro",
-          "name": "Cirila Alejandro"
-        }
-      ]
+      "x": "francisco-mercado-rizal",
+      "y": "jose-rizal"
     },
 
     {
-      "id": "teodora-alonzo",
-      "name": "Teodora de Quintos Alonzo",
+      "x": "teodora-alonzo",
+      "y": "jose-rizal"
+    },
 
-      "_parents": [
-        {
-          "id": "lorenzo-alberto-alonzo",
-          "name": "Lorenzo Alberto Alonzo"
-        },
+    {
+      "x": "francisco-mercado-rizal",
+      "y": "soledad-rizal"
+    },
 
-        {
-          "id": "brigida-de-quintos",
-          "name": "Brigida de Quintos"
-        }
-      ]
+    {
+      "x": "teodora-alonzo",
+      "y": "soledad-rizal"
     }
   ]
 }
