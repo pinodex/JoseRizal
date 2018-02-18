@@ -12,7 +12,7 @@
               </p>
 
               <p>
-                <em>All pictures and texts are property of their respective owners. All pictures and texts used in this website are for identification purposes only.</em>
+                <em>All pictures and texts are property of their respective owners. All pictures and texts used in this website are for educational purposes only.</em>
               </p>
 
               <p>
@@ -31,6 +31,10 @@
 <style>
   img {
     image-rendering: crisp-edges;
+  }
+
+  a {
+    color: #bc5d29;
   }
 
   .container {

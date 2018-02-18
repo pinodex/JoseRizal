@@ -31,7 +31,11 @@
           </div>
 
           <div class="navbar-end">
-            <router-link class="navbar-item" :to="{ name: 'about' }">About</router-link>
+            <router-link class="navbar-item"
+              :to="{ name: 'about' }"
+              :class="{ 'is-active': $route.name == 'about' }">
+              About
+            </router-link>
           </div>
         </div>
       </div>
