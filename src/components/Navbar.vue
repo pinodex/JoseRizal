@@ -71,6 +71,7 @@
         items: [
           { text: 'Home', route: 'index' },
           { text: 'Biography', route: 'biography' },
+          { text: 'Timeline', route: 'timeline' },
           { text: 'Blog', route: 'blog' },
           { text: 'Travels', route: 'travels' },
           { text: 'Works', route: 'works' }

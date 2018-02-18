@@ -1,7 +1,293 @@
 [
-  {"id": 1, "content": "item 1", "start": "2013-04-20"},
-  {"id": 2, "content": "item 2", "start": "2013-04-14"},
-  {"id": 3, "content": "item 3", "start": "2013-04-18"},
-  {"id": 4, "content": "item 4", "start": "2013-04-16", "end": "2013-04-19"},
-  {"id": 5, "content": "item 5", "start": "2013-04-25"},
-  {"id": 6, "content": "item 6", "start": "2013-04-27"}]
+  {
+    "id": 1,
+    "content": "Jose Rizal was born in Calamba, Laguna",
+    "start": "1861-06-19"
+  },
+
+  {
+    "id": 2,
+    "content": "Jose Rizal was baptized by Rev. Rufino Collantes",
+    "start": "1861-06-22"
+  },
+
+  {
+    "id": 3,
+    "content": "The church of Calamba where Rizal's baptismal records were stored, were burned",
+    "start": "1862-09-28"
+  },
+
+  {
+    "id": 4,
+    "content": "Learned alphabet from his mother at three years old",
+    "start": "1864"
+  },
+
+  {
+    "id": 5,
+    "content": "His sister Conception died",
+    "start": "1865"
+  },
+
+  {
+    "id": 6,
+    "content": "His mother taught him how to read and write",
+    "start": "1865"
+  },
+
+  {
+    "id": 7,
+    "content": "He made a pilgrimage to Antipolo with his father",
+    "start": "1868-06-06"
+  },
+
+  {
+    "id": 8,
+    "content": "He wrote his first poem \"Sa Aking Mga Kabata\"",
+    "start": "1869"
+  },
+
+  {
+    "id": 9,
+    "content": "He began schooling under Justiniano Aquino Cruz at nine years old",
+    "start": "1870"
+  },
+
+  {
+    "id": 10,
+    "content": "He left Binan for Calamba",
+    "start": "1871-12-17"
+  },
+
+  {
+    "id": 11,
+    "content": "He attended school in Calamba under Master Lucas Padua",
+    "start": "1871-12-17"
+  },
+
+  {
+    "id": 12,
+    "content": "Dona Teodora was arrested on malicious charge that she aided her brother, Jose Alberto in poisoning his wife.",
+    "start": "1871-12-17"
+  },
+  {
+    "id": 13,
+    "content": "Cavite mutiny flared up",
+    "start": "1872-01-20"
+  },
+  {
+    "id": 14,
+    "content": "He heard the execution of GomBurZa",
+    "start": "1872-02-17"
+  },
+  {
+    "id": 15,
+    "content": "He took entrace exam at the College of San Juan de Letran and passed them all.",
+    "start": "1872-06-10"
+  },
+  {
+    "id": 16,
+    "content": "His father decided to send him to Ateneo instead of Letran",
+    "start": "1872-06-10"
+  },
+  {
+    "id": 17,
+    "content": "He was the first to use the surname \"Rizal\" to avoid association with Fr. Jose Burgos",
+    "start": "1872-06-10"
+  },
+  {
+    "id": 18,
+    "content": "He went to class composed of peninsular, Spaniards, insulars, mestizos, and natives",
+    "start": "1872"
+  },
+  {
+    "id": 19,
+    "content": "He was the source of ridicule from his classmates by having crude knowledge of Spanish",
+    "start": "1872"
+  },
+  {
+    "id": 20,
+    "content": "Finished the first year of Philosophy and Letters and transferred to a medical couese",
+    "start": "1877"
+  },
+  {
+    "id": 21,
+    "content": "He took a vocational course for Expert Surveyor at Ateneo",
+    "start": "1877-04"
+  },
+  {
+    "id": 22,
+    "content": "He wrote a poem for a competition, but lost for discrimination",
+    "start": "1880"
+  },
+  {
+    "id": 23,
+    "content": "He won the first prize for the allegory \"El Consejo de los Dioses\"",
+    "start": "1880-04-13"
+  },
+  {
+    "id": 24,
+    "content": "Ateneo Municipal de Manila produced Rizal's operetta \"Junto al Pasig\"",
+    "start": "1880-12-08"
+  },
+  {
+    "id": 25,
+    "content": "He wrote another poem for the Ateneo rector",
+    "start": "1881-01-25"
+  },
+  {
+    "id": 26,
+    "content": "He became secretary of the Academia de Ciencias Filosoficonaturales",
+    "start": "1881-02-10"
+  },
+  {
+    "id": 27,
+    "content": "He left for Europe with the steamship Djemnah",
+    "start": "1882-05-03"
+  },
+  {
+    "id": 28,
+    "content": "He joined Masonry intending to use as a shield to combat friars",
+    "start": "1883"
+  },
+  {
+    "id": 29,
+    "content": "He was conferred the degree of Licentiate in Medicine",
+    "start": "1883-06-23"
+  },
+  {
+    "id": 30,
+    "content": "He finished Philosophy and Letters with a grade of excellent.",
+    "start": "1885-06-19"
+  },
+  {
+    "id": 31,
+    "content": "He moved to Paris, France to specialize in Opthalmology",
+    "start": "1885-11"
+  },
+  {
+    "id": 32,
+    "content": "He had his grand tour of Europe",
+    "start": "1887-08"
+  },
+  {
+    "id": 33,
+    "content": "He arrived in Manila from Europe via Hong Kong",
+    "start": "1892-06-26"
+  },
+  {
+    "id": 34,
+    "content": "He formed La Liga Filipina",
+    "start": "1892-07-03"
+  },
+  {
+    "id": 35,
+    "content": "He was arrested for establishing La Liga Filipinas",
+    "start": "1892-07-07"
+  },
+  {
+    "id": 36,
+    "content": "He was exiled to Dapitan",
+    "start": "1892-07-17"
+  },
+  {
+    "id": 37,
+    "content": "He won the lottery of P20,000 with Francisco Equilor",
+    "start": "1892-09-21"
+  },
+  {
+    "id": 38,
+    "content": "He described his peaceful life in Dapitan to his friend Ferdinand Blumentritt",
+    "start": "1893-12-19"
+  },
+  {
+    "id": 39,
+    "content": "Dona Teodora with her eyesight was fully restored and returned to Manila",
+    "start": "1895-02"
+  },
+  {
+    "id": 40,
+    "content": "He gave a letter to his sister Trinidad praising Josephine",
+    "start": "1895-09-25"
+  },
+  {
+    "id": 41,
+    "content": "He wrote a poem in Dapitan entitled Mi Retiro per his mother's request",
+    "start": "1895-10-22"
+  },
+  {
+    "id": 42,
+    "content": "He and Josephine gave a Christmas party at their home in Talisay",
+    "start": "1895-12-25"
+  },
+  {
+    "id": 43,
+    "content": "He gave his writings to his sister Trinidad describing his last Christmas party",
+    "start": "1895-06-15"
+  },
+  {
+    "id": 44,
+    "content": "He was kept under arrest for 27 days aboard cruiser Castilla, anchored off Canacao, Cavite",
+    "start": "1896-08-06"
+  },
+  {
+    "id": 45,
+    "content": "He sent a letter to his sister Narcisa asking her to let Josephine Bracken send him pants, vests, collars, and cuffs",
+    "start": "1896-07-12"
+  },
+  {
+    "id": 46,
+    "content": "He advised his parents and sisters how they could visit him on board the Castilla",
+    "start": "1896-07-19"
+  },
+  {
+    "id": 47,
+    "content": "He thanked his sister Narcisa for letting Josephine stay in her house",
+    "start": "1896-07-25"
+  },
+  {
+    "id": 48,
+    "content": "Gov. Ramon Blanco sent Rizal a letter recommending him to the Minister of War",
+    "start": "1896-07-30"
+  },
+  {
+    "id": 49,
+    "content": "He was transferred to the boat Isla de Panay",
+    "start": "1896-09-02"
+  },
+  {
+    "id": 50,
+    "content": "He was advised by a military sergeant to pack his things",
+    "start": "1896-10-06"
+  },
+  {
+    "id": 51,
+    "content": "The Spanish authorities confiscated his diary, and bought back to him after a few days",
+    "start": "1896-10-11"
+  },
+  {
+    "id": 52,
+    "content": "He was found guilty by a Spanish court for sedition, rebellion, conspiracy, and was sentenced to death",
+    "start": "1896-12-26"
+  },
+  {
+    "id": 53,
+    "content": "It was decided that Rizal will be executed by musketry",
+    "start": "1896-12-28"
+  },
+  {
+    "id": 54,
+    "content": "He was transferred to his death cell in Fort Santiago",
+    "start": "1896-12-29"
+  },
+  {
+    "id": 55,
+    "content": "He walked to the place of execution",
+    "start": "1896-12-30"
+  },
+  {
+    "id": 56,
+    "content": "He was shot and fell down backward facing the sun.",
+    "start": "1896-12-30"
+  }
+]

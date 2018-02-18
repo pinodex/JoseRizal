@@ -46,8 +46,6 @@
         </div>
       </div>
     </div>
-
-    <!--<component :is="timeline"></component>-->
   </section>
 </template>
 
@@ -65,8 +63,6 @@
       return {
         trivia: null,
         featuredWork: null,
-
-        timeline: null
       }
     },
 
@@ -80,8 +76,6 @@
 
       import('@/data/works')
         .then(works => this.featuredWork = randomItem(works))
-
-      this.timeline = () => import('@/components/Index/Timeline')
     }
   }
 </script>

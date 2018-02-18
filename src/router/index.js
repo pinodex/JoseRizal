@@ -62,6 +62,12 @@ const router = new Router({
     },
 
     {
+      path: '/timeline',
+      name: 'timeline',
+      component: () => import('@/pages/Timeline/Index')
+    },
+
+    {
       path: '/blog',
       name: 'blog',
       component: () => import('@/pages/Blog/Index')

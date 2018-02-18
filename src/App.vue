@@ -123,7 +123,8 @@
 
     computed: {
       hasFooter () {
-        return this.$route.name != 'biography.family'
+        return !(this.$route.name == 'biography.family' ||
+          this.$route.name == 'timeline')
       }
     },
 
