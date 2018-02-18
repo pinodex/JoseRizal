@@ -74,6 +74,12 @@ const router = new Router({
     },
 
     {
+      path: '/travels',
+      name: 'travels',
+      component: () => import('@/pages/Travels/Index')
+    },
+
+    {
       path: '/works',
       name: 'works',
       component: () => import('@/pages/Works/Index')

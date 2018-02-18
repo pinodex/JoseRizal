@@ -68,6 +68,7 @@
           { text: 'Home', route: 'index' },
           { text: 'Biography', route: 'biography' },
           { text: 'Blog', route: 'blog' },
+          { text: 'Travels', route: 'travels' },
           { text: 'Works', route: 'works' }
         ]
       }
