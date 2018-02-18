@@ -45,12 +45,16 @@
     },
 
     mounted () {
-      this.$root.setPageTitle('Works')
-
       let slug = this.$route.params.slug
 
       import('@/data/works/categories')
-        .then(categories => this.categories = categories)
+        .then(categories => {
+          this.categories = categories
+
+          let category = categories.find(category => category.slug == slug)
+
+          this.$root.setPageTitle(`${category.title} - Works`)
+        })
 
       import('@/data/works')
         .then(works => this.works = works.filter(work => work.category == slug))
@@ -61,6 +65,10 @@
 
       import('@/data/works')
         .then(works => this.works = works.filter(work => work.category == slug))
+
+      let category = this.categories.find(category => category.slug == slug)
+
+      this.$root.setPageTitle(`${category.title} - Works`)
 
       next()
     },

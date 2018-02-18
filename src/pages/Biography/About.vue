@@ -128,6 +128,8 @@
     },
 
     mounted () {
+      this.$root.setPageTitle('Biography')
+
       this.$root.$on('scroll', e => {
         this.bgOffset = (window.scrollY / 2) * -1
       })

@@ -29,6 +29,10 @@
 
     data () {
       return { content }
+    },
+
+    mounted () {
+      this.$root.setPageTitle('Education')
     }
   }
 </script>

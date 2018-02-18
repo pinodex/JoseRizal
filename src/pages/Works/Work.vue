@@ -85,6 +85,8 @@
       import(`@/data/works`)
         .then(works => {
           this.work = works.find(w => w.slug == slug)
+
+          this.$root.setPageTitle(`${this.work.title} - Works`)
         })
 
       import(`@/data/works/${slug}/content.md`)

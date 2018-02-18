@@ -58,11 +58,11 @@
     mounted () {
       let slug = this.$route.params.slug
 
-      import(`@/data/blog/${slug}`)
-        .then(entry => {
-          this.entry = entry
+      import(`@/data/blog`)
+        .then(entries => {
+          this.entry = entries.find(e => e.slug == slug)
 
-          this.$root.setPageTitle(`${entry.title} - Blog`)
+          this.$root.setPageTitle(`${this.entry.title} - Blog`)
         })
 
       import(`@/data/blog/${slug}/content.md`)

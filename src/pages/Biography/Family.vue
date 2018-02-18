@@ -56,6 +56,8 @@
     components: { },
 
     mounted () {
+      this.$root.setPageTitle('Family')
+
       // https://github.com/justincy/d3-pedigree-examples
 
       let ancestorRoot, descendantRoot,
@@ -291,18 +293,6 @@
 
       ancestorRoot = rootProxy(family)
       descendantRoot = rootProxy(family)
-
-      /*
-      ancestorRoot._parents.forEach(parents => {
-        if (!parents._parents) {
-          return true
-        }
-
-        parents._parents.forEach(collapse)
-      })
-
-      descendantRoot._children.forEach(collapse)
-      */
 
       drawAncestors(ancestorRoot)
       drawDescendants(descendantRoot)
