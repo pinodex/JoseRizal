@@ -1,6 +1,6 @@
 <template>
   <transition name="slide-fade">
-    <div class="columns" v-if="quote">
+    <div class="columns is-mobile" v-if="quote">
       <div class="column is-3">
         <figure class="image">
           <img src="/static/img/jose-rizal.jpg">
