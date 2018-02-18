@@ -76,6 +76,14 @@
               <a href="https://kahimyang.com/" target="_blank">The Kahimyang Project</a>
             </p>
 
+            <p>
+              <a href="https://prezi.com/lw7_f56vpoex/rizals-exile-in-dapitan-1892-1896/" target="_blank">Rizal in Dapitan by Janry Seran</a>
+            </p>
+
+            <p>
+              <a href="https://www.scribd.com/document/157222865/Pastells-vs-Rizal" target="_blank">Pastells vs. Rizal by Shelly Mae Ramos</a>
+            </p>
+
             <h3 class="subtitle">Open Source</h3>
 
             <p>
