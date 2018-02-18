@@ -12,13 +12,9 @@
     </div>
 
     <div class="container">
-      <div class="columns">
-        <div class="column is-4">
-          <trivia></trivia>
-        </div>
-
-        <div class="column is-offset-4 is-4">
-          <featured-work></featured-work>
+      <div class="columns is-centered">
+        <div class="column is-6">
+          <random-quotation class="quote"></random-quotation>
         </div>
       </div>
     </div>
@@ -27,11 +23,10 @@
 
 <script>
   import Navbar from '@/components/Navbar'
-  import FeaturedWork from '@/components/FeaturedWork'
-  import Trivia from '@/components/Trivia'
+  import RandomQuotation from '@/components/RandomQuotation'
 
   export default {
-    components: { Navbar, FeaturedWork, Trivia },
+    components: { Navbar, RandomQuotation },
 
     created () {
       this.$root.setPageTitle('Page Not Found')
@@ -42,5 +37,10 @@
 <style lang="scss" scoped>
   .hero {
     margin-bottom: 1rem;
+  }
+
+  .quote {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
   }
 </style>

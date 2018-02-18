@@ -22,6 +22,8 @@
                   In this website you will the biography, geneology, education, travels, paintings, literatures, sculptures, sketches, and discoveries of Jose Rizal.
                 </p>
               </div>
+
+              <random-quotation class="quote"></random-quotation>
             </div>
 
             <div class="column">
@@ -41,11 +43,12 @@
 
   import Navbar from '@/components/Navbar'
   import IndexHeroMain from '@/components/Index/HeroMain'
+  import RandomQuotation from '@/components/RandomQuotation'
   import FeaturedWork from '@/components/FeaturedWork'
   import Trivia from '@/components/Trivia'
 
   export default {
-    components: { Navbar, IndexHeroMain, Trivia, FeaturedWork },
+    components: { Navbar, IndexHeroMain, RandomQuotation, Trivia, FeaturedWork },
 
     created () {
       this.$root.setPageTitle('Home')
@@ -58,7 +61,8 @@
     position: relative;
   }
 
-  .trivia {
+  .trivia,
+  .quote {
     margin-top: 2rem;
   }
 </style>
