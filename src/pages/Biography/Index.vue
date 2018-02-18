@@ -1,7 +1,7 @@
 <template>
   <section>
     <navbar :collapse="true" :shadow="false"></navbar>
-    <sub-navbar :items="subNavItems"></sub-navbar>
+    <sub-navbar :items="subNavItems" :animate-in="animateIn"></sub-navbar>
 
     <transition name="fade" mode="out-in">
       <component :is="currentPage"></component>
@@ -19,7 +19,8 @@
     education: () => import('@/pages/Biography/Education'),
     monuments: () => import('@/pages/Biography/Monuments'),
     philosophies: () => import('@/pages/Biography/Philosophies'),
-    personalities: () => import('@/pages/Biography/Personalities')
+    personalities: () => import('@/pages/Biography/Personalities'),
+    quotations: () => import('@/pages/Biography/Quotations')
   }
 
   const mapping = {
@@ -28,7 +29,8 @@
     'biography.education': pages.education,
     'biography.monuments': pages.monuments,
     'biography.philosophies': pages.philosophies,
-    'biography.personalities': pages.personalities
+    'biography.personalities': pages.personalities,
+    'biography.quotations': pages.quotations
   }
 
   export default {
@@ -42,7 +44,8 @@
           { text: 'Education', route: 'biography.education' },
           { text: 'Monuments', route: 'biography.monuments' },
           { text: 'Philosophies', route: 'biography.philosophies' },
-          { text: 'Personalities', route: 'biography.personalities' }
+          { text: 'Personalities', route: 'biography.personalities' },
+          { text: 'Quotations', route: 'biography.quotations' }
         ]
       }
     },
@@ -50,6 +53,10 @@
     computed: {
       currentPage () {
         return mapping[this.$route.name]
+      },
+
+      animateIn () {
+        return this.$route.name == 'biography'
       }
     },
 
