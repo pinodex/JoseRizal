@@ -3,7 +3,7 @@
     <navbar :collapse="true" :shadow="true"></navbar>
 
     <transition name="fade">
-      <div class="hero is-dark is-fullheight header-banner" :style="headerStyle" v-if="entry">
+      <div class="hero is-dark is-medium header-banner" :style="headerStyle" v-if="entry">
         <div class="overlay"></div>
 
         <div class="hero-body">
@@ -74,6 +74,16 @@
 <style lang="scss" scoped>
   .main-container {
     padding-top: 72px;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background: rgba(0, 0, 0, 0.5);
   }
 
   .entry {

@@ -1,55 +1,65 @@
 [
   {
-    "title": "Sample Entry 01",
-    "slug": "sample-entry-01",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "banner": "/static/img/placeholder.gif"
+    "title": "Segunda Katigbak",
+    "slug": "segunda-katigbak",
+    "description": "Segunda Katigbak was her puppy love. Unfortunately, his first love was engaged to be married to a town mate.",
+    "banner": "/static/files/segunda-katigbak.jpg",
+    "tags": ["lovelife"]
   },
 
   {
-    "title": "Sample Entry 02",
-    "slug": "sample-entry-02",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "banner": "/static/img/placeholder.gif"
+    "title": "Leonor Rivera",
+    "slug": "leonor-rivera",
+    "description": "Leonor Rivera, his sweetheart for 11 years played the greatest influence in keeping him from falling in love with other women during his travel.",
+    "banner": "/static/files/leonor-rivera.jpg",
+    "tags": ["lovelife"]
   },
 
   {
-    "title": "Sample Entry 03",
-    "slug": "sample-entry-03",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "banner": "/static/img/placeholder.gif"
+    "title": "Consuelo Ortiga",
+    "slug": "consuelo-ortiga",
+    "description": "Consuelo Ortiga y Rey, the prettier of Don Pablo Ortiga’s daughters, fell in love with him.",
+    "banner": "/static/files/consuelo-ortiga.jpg",
+    "tags": ["lovelife"]
   },
 
   {
-    "title": "Sample Entry 04",
-    "slug": "sample-entry-04",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "banner": "/static/img/placeholder.gif"
+    "title": "O Sei San",
+    "slug": "o-sei-san",
+    "description": "O Sei San, a Japanese samurai’s daughter taught Rizal the Japanese art of painting known as su-mie.",
+    "banner": "/static/files/o-sei-san.jpg",
+    "tags": ["lovelife"]
   },
 
   {
-    "title": "Sample Entry 05",
-    "slug": "sample-entry-05",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "banner": "/static/img/placeholder.gif"
+    "title": "Gertrude Beckett",
+    "slug": "gertrude-beckett",
+    "description": "While Rizal was in London annotating the Sucesos de las Islas Filipinas, he boarded in the house of the Beckett family.",
+    "banner": "/static/files/gertrude-beckett.jpg",
+    "tags": ["lovelife"]
   },
 
   {
-    "title": "Sample Entry 06",
-    "slug": "sample-entry-06",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "banner": "/static/img/placeholder.gif"
+    "title": "Nellie Boustead",
+    "slug": "nellie-boustead",
+    "description": "Rizal having lost Leonor Rivera, entertained the thought of courting other ladies.",
+    "banner": "/static/files/nellie-boustead.jpg",
+    "tags": ["lovelife"]
   },
 
   {
-    "title": "Sample Entry 07",
-    "slug": "sample-entry-07",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    "title": "Suzanne Jacoby",
+    "slug": "suzanne-jacoby",
+    "description": "Rizal moved to Brussels because of the high cost of living in Paris. In Brussels, he lived in the boarding house of the two Jacoby sisters.",
+    "banner": "/static/files/suzanne-jacoby.jpg",
+    "tags": ["lovelife"]
   },
 
   {
-    "title": "Sample Entry 08",
-    "slug": "sample-entry-08",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    "title": "Josephine Bracken",
+    "slug": "josephine-bracken",
+    "description": "In the last days of February 1895, while still in Dapitan, Rizal met an 18-year old petite Irish girl, with bold blue eyes, brown hair and a happy disposition.",
+    "banner": "/static/files/josephine-bracken.jpg",
+    "tags": ["lovelife"]
   }
 ]

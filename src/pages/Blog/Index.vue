@@ -41,7 +41,7 @@
       this.$root.setPageTitle('Blog')
 
       entries.forEach((entry, index) => {
-        let column = index % 3
+        let column = index % 4
 
         if (!this.entries[column]) {
           this.entries[column] = []
