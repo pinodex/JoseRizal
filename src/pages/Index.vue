@@ -25,22 +25,9 @@
             </div>
 
             <div class="column">
-              <transition name="slide-fade">
-                <section v-if="featuredWork">
-                  <h2 class="subtitle">Featured Work</h2>
+              <featured-work></featured-work>
 
-                  <entry :work="featuredWork" :height="250"></entry>
-                </section>
-              </transition>
-
-              <transition name="slide-fade">
-                <section v-if="trivia">
-                  <h2 class="subtitle did-you-know">Did you know?</h2>
-                  <div class="content" v-if="trivia">
-                    <p>{{ trivia }}</p>
-                  </div>
-                </section>
-              </transition>
+              <trivia class="trivia"></trivia>
             </div>
           </div>
         </div>
@@ -54,28 +41,14 @@
 
   import Navbar from '@/components/Navbar'
   import IndexHeroMain from '@/components/Index/HeroMain'
-  import Entry from '@/components/Works/Entry'
+  import FeaturedWork from '@/components/FeaturedWork'
+  import Trivia from '@/components/Trivia'
 
   export default {
-    components: { Navbar, IndexHeroMain, Entry },
-
-    data () {
-      return {
-        trivia: null,
-        featuredWork: null,
-      }
-    },
+    components: { Navbar, IndexHeroMain, Trivia, FeaturedWork },
 
     created () {
       this.$root.setPageTitle('Home')
-    },
-
-    mounted () {
-      import('@/data/trivia')
-        .then(trivias => this.trivia = randomItem(trivias))
-
-      import('@/data/works')
-        .then(works => this.featuredWork = randomItem(works))
     }
   }
 </script>
@@ -85,7 +58,7 @@
     position: relative;
   }
 
-  .did-you-know {
+  .trivia {
     margin-top: 2rem;
   }
 </style>

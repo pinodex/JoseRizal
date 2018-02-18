@@ -107,6 +107,12 @@ const router = new Router({
       path: '/works/view/:slug',
       name: 'works.view',
       component: () => import('@/pages/Works/Work')
+    },
+
+    {
+      path: "*",
+      name: 'not_found',
+      component: () => import('@/pages/NotFound')
     }
   ],
 
