@@ -5,18 +5,18 @@
       v-show="isNavbarVisible">
 
       <div class="container">
-        <router-link :to="{ name: 'index' }" class="navbar-brand">
-          <div class="navbar-item">
+        <div class="navbar-brand">
+          <router-link :to="{ name: 'index' }" class="navbar-item">
             <img src="/static/img/jose-rizal-vector-200.png" alt="Jose Rizal Face" />
             <img src="/static/img/jose-rizal-signature-400.png" />
-          </div>
+          </router-link>
 
           <button class="button navbar-burger" @click="toggleMenu()">
             <span></span>
             <span></span>
             <span></span>
           </button>
-        </router-link>
+        </div>
 
         <div class="navbar-menu" :class="{'is-active': isMenuVisible}">
           <button class="delete is-large" @click="hideMenu()"></button>
