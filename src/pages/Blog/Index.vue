@@ -39,7 +39,8 @@
               <p class="description" v-html="entry.description"></p>
 
               <div class="tags">
-                <router-link v-for="tag in entry.tags" :to="{ name: 'blog.tag', params: { slug: tag } }"
+                <router-link v-for="tag in entry.tags" :key="tag"
+                  :to="{ name: 'blog.tag', params: { slug: tag } }"
                   class="tag is-rounded">
                   {{ tag }}
                 </router-link>

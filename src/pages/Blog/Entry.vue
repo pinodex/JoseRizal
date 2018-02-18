@@ -8,8 +8,18 @@
 
         <div class="hero-body">
           <div class="container has-text-centered">
-            <h1 class="title">{{ entry.title }}</h1>
-            <p>{{ entry.description }}</p>
+            <div class="columns is-centered">
+              <div class="column is-6">
+                <h1 class="title">{{ entry.title }}</h1>
+                <p>{{ entry.description }}</p>
+
+                <div class="tags is-centered">
+                  <span class="tag is-medium" v-for="tag in entry.tags" :key="tag">
+                    {{ tag }}
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -111,9 +121,14 @@
     background-size: cover;
 
     position: relative;
+    margin-top: 52px;
   }
 
   .content-container {
     margin-top: 2rem;
+  }
+
+  .tags {
+    margin-top: 1rem;
   }
 </style>

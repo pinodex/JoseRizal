@@ -65,9 +65,92 @@
 
   {
     "title": "Huling Paalam",
-    "slug": "josephine-bracken",
-    "description": "sfsdfsf",
-    "banner": "/static/files/josephine-bracken.jpg",
+    "slug": "huling-paalam",
+    "description": "Also known as \"Mi Ultimo Adios\", the last poem of Rizal",
+    "tags": ["poem"]
+  },
+
+  {
+    "title": "To The Philippines",
+    "slug": "to-the-philippines",
+    "description": "Rizal wrote the original sonnet in Spanish",
+    "tags": ["poem"]
+  },
+
+  {
+    "title": "Our Mother Tongue",
+    "slug": "our-mother-tongue",
+    "description": "A poem originally in Tagalog written by Rizal when he was only eight years old.",
+    "tags": ["poem"]
+  },
+
+  {
+    "title": "Memories of My Town",
+    "slug": "memories-of-my-town",
+    "description": "Memories of My Town",
+    "tags": ["poem"]
+  },
+
+  {
+    "title": "Imno sa Paggawa",
+    "slug": "imno-sa-paggawa",
+    "description": "Salin sa tulang “Himno al Trabajo” na sinulat ni Rizal sa kahilingan ng kaniyang mga kaibigang taga-Lipaa, Batangas upang awitin sa pag-diriwang dahil sa pagiging lungsod ng Lipa.",
+    "tags": ["poem"]
+  },
+
+  {
+    "title": "Kundiman",
+    "slug": "kundiman",
+    "description": "Salin sa tulang “Himno al Trabajo” na sinulat ni Rizal sa kahilingan ng kaniyang mga kaibigang taga-Lipaa, Batangas upang awitin sa pag-diriwang dahil sa pagiging lungsod ng Lipa.",
+    "tags": ["poem"]
+  },
+
+  {
+    "title": "A poem that has no title",
+    "slug": "a-poem-that-has-no-title",
+    "description": "A poem that has no title",
+    "tags": ["poem"]
+  },
+
+  {
+    "title": "Song of Maria Clara",
+    "slug": "song-of-maria-clara",
+    "description": "Ang tulang ito'y matatagpuan sa Noli Me Tangere ang inawit ni Maria Clara, kaya gayon ang pamagat.",
+    "tags": ["poem"]
+  },
+
+  {
+    "title": "To The Philippines' Youth",
+    "slug": "to-the-philippines-youth",
+    "description": "Salin ito ng tulang “A La Juventud Filipina” na sinulat ni Rizal sa Unibersidad ng Santo Tomas noong siya’y labingwalong taong gulang.",
+    "tags": ["poem"]
+  },
+
+  {
+    "title": "To Josephine",
+    "slug": "to-josephine",
+    "description": "Rizal dedicated this poem to Josephine Bracken.",
+    "tags": ["poem"]
+  },
+
+  {
+    "title": "Education Gives Luster to the Motherland",
+    "slug": "education-gives-luster-to-the-motherland",
+    "description": "Education Gives Luster to the Motherland",
+    "tags": ["poem"]
+  },
+
+  {
+    "title": "To the Virgin Mary",
+    "slug": "to-the-virgin-mary",
+    "description": "To the Virgin Mary",
+    "tags": ["poem"]
+  },
+
+  {
+    "title": "Sa Aking mga Kabata",
+    "slug": "sa-aking-mga-kabata",
+    "description": "Unang tula na isinulat ni Rizal noong siya'y walong taong gulang",
     "tags": ["poem"]
   }
 ]
