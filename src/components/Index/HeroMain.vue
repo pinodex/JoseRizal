@@ -115,7 +115,9 @@
     mounted () {
       setTimeout(() => this.isWelcomeTextVisible = true, 200)
 
-      this.loadBgVideo()
+      if (/Mobi|Tablet|iPad|iPhone/.test(navigator.userAgent) === false) {
+        this.loadBgVideo()
+      }
     },
 
     methods: {
