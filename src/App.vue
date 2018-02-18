@@ -42,21 +42,7 @@
   }
 
   .hero-header {
-    background-position: center;
-    background-size: cover;
-
     margin-top: 104px;
-    position: relative;
-  }
-
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-
-    background: rgba(0, 0, 0, 0.75);
   }
 
   .page-footer {

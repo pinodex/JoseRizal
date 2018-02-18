@@ -1,16 +1,8 @@
 <template>
   <section>
-    <div class="hero is-dark hero-header is-medium">
-      <div class="overlay"></div>
+    <header-banner background="/static/img/philosophy.jpg" text="Philosophies"></header-banner>
 
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <h1 class="is-size-1">Philosophies</h1>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
+    <div class="container main-content">
       <div class="columns is-centered">
         <div class="column is-8">
           <div class="content">
@@ -23,16 +15,18 @@
 </template>
 
 <style lang="scss" scoped>
-  .hero-header {
-    background-image: url(/static/img/philosophy.jpg);
-    margin-bottom: 2rem;
+  .main-content {
+    margin-top: 2rem;
   }
 </style>
 
 <script>
+  import HeaderBanner from '@/components/HeaderBanner'
   import content from '@/data/biography/philosophies.md'
 
   export default {
+    components: { HeaderBanner },
+
     data () {
       return { content }
     }

@@ -94,31 +94,4 @@
   .did-you-know {
     margin-top: 2rem;
   }
-
-  .featured-work {
-    position: relative;
-
-    .overlay-content {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      background: rgba(0, 0, 0, 0.5);
-
-      color: #fff;
-
-      transition: opacity 0.3s ease;
-      opacity: 0;
-
-      &:hover {
-        opacity: 1;
-      }
-    }
-  }
 </style>
