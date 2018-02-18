@@ -61,5 +61,13 @@
     "description": "In the last days of February 1895, while still in Dapitan, Rizal met an 18-year old petite Irish girl, with bold blue eyes, brown hair and a happy disposition.",
     "banner": "/static/files/josephine-bracken.jpg",
     "tags": ["lovelife"]
+  },
+
+  {
+    "title": "Huling Paalam",
+    "slug": "josephine-bracken",
+    "description": "sfsdfsf",
+    "banner": "/static/files/josephine-bracken.jpg",
+    "tags": ["poem"]
   }
 ]

@@ -62,6 +62,12 @@ const router = new Router({
     },
 
     {
+      path: '/blog/tag/:slug',
+      name: 'blog.tag',
+      component: () => import('@/pages/Blog/Index')
+    },
+
+    {
       path: '/blog/:slug',
       name: 'blog.entry',
       component: () => import('@/pages/Blog/Entry')
