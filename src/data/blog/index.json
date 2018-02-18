@@ -152,5 +152,12 @@
     "slug": "sa-aking-mga-kabata",
     "description": "Unang tula na isinulat ni Rizal noong siya'y walong taong gulang",
     "tags": ["poem"]
+  },
+
+  {
+    "title": "A la Senorita C.O. y R.",
+    "slug": "a-la-senorita-consuelo-ortiga",
+    "description": "Tula na isinulat ni Rizal para kay Consulo Ortiga",
+    "tags": ["poem"]
   }
 ]
