@@ -5,7 +5,7 @@
 
       <transition name="slide-fade-slow">
         <div class="video" v-show="isVideoBgVisible">
-          <video ref="bgVideo" autoplay loop></video>
+          <video ref="bgVideo" autoplay loop muted></video>
         </div>
       </transition>
 
