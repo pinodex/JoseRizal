@@ -70,7 +70,7 @@
 
       import(`@/data/blog`)
         .then(entries => {
-          this.entry = entries.find(e => e.slug == slug)
+          this.entry = entries.default.find(e => e.slug == slug)
 
           this.$root.setPageTitle(`${this.entry.title} - Blog`)
         })

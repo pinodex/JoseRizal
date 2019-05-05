@@ -19,14 +19,9 @@ Vue.use(VueProgressBar, {
 
 /* eslint-disable no-new */
 new Vue({
-  el: '#app',
-
   router,
-
-  components: { App },
-
-  template: '<App/>',
-
+  el: '#app',
+  render: h => h(App),
   methods: {
     setPageTitle (title) {
       document.title = `${title} - José Rizal`

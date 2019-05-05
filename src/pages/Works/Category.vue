@@ -47,24 +47,24 @@
     mounted () {
       let slug = this.$route.params.slug
 
-      import('@/data/works/categories')
+      import('@/data/works/categories.json')
         .then(categories => {
-          this.categories = categories
+          this.categories = categories.default
 
-          let category = categories.find(category => category.slug == slug)
+          let category = this.categories.find(category => category.slug == slug)
 
           this.$root.setPageTitle(`${category.title} - Works`)
         })
 
       import('@/data/works')
-        .then(works => this.works = works.filter(work => work.category == slug))
+        .then(works => this.works = works.default.filter(work => work.category == slug))
     },
 
     beforeRouteUpdate (to, from, next) {
       let slug = to.params.slug
 
       import('@/data/works')
-        .then(works => this.works = works.filter(work => work.category == slug))
+        .then(works => this.works = works.default.filter(work => work.category == slug))
 
       let category = this.categories.find(category => category.slug == slug)
 

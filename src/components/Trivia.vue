@@ -21,7 +21,7 @@
 
     mounted () {
       import('@/data/trivia')
-        .then(trivias => this.trivia = randomItem(trivias))
+        .then(trivias => this.trivia = randomItem(trivias.default))
     }
   }
 </script>

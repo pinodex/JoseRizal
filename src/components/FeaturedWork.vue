@@ -22,8 +22,8 @@
     },
 
     mounted () {
-      import('@/data/works')
-        .then(works => this.work = randomItem(works))
+      import('@/data/works/index.json')
+        .then(works => this.work = randomItem(works.default))
     }
   }
 </script>

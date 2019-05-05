@@ -51,7 +51,7 @@
     }
   }
 
-  .timeline /deep/ {
+  ::v-deep {
     .vis-timeline {
       border: none;
     }

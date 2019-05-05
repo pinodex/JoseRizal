@@ -29,8 +29,8 @@
     },
 
     mounted () {
-      import('@/data/quotations')
-        .then(quotations => this.quote = randomItem(quotations))
+      import('@/data/quotations.json')
+        .then(quotations => this.quote = randomItem(quotations.default))
     }
   }
 </script>

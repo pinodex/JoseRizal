@@ -79,12 +79,12 @@
     mounted () {
       let slug = this.$route.params.slug
 
-      import('@/data/works/categories')
-        .then(categories => this.categories = categories)
+      import('@/data/works/categories.json')
+        .then(categories => this.categories = categories.default)
 
-      import(`@/data/works`)
+      import(`@/data/works/index.json`)
         .then(works => {
-          this.work = works.find(w => w.slug == slug)
+          this.work = works.default.find(w => w.slug == slug)
 
           this.$root.setPageTitle(`${this.work.title} - Works`)
         })

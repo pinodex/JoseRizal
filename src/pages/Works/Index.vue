@@ -26,8 +26,8 @@
     mounted () {
       this.$root.setPageTitle('Works')
 
-      import(`@/data/works/categories`)
-        .then(categories => this.categories = categories)
+      import(`@/data/works/categories.json`)
+        .then(categories => this.categories = categories.default)
     }
   }
 </script>
